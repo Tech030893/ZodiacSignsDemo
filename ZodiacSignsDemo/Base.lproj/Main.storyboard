@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZodiacSignsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="राशि  चिन्ह" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPI-TL-dNC">
+                                <rect key="frame" x="0.0" y="49" width="414" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DOn-OH-JGR">
+                                <rect key="frame" x="0.0" y="82.5" width="414" height="779.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dYo-nC-Ihu">
+                                    <size key="itemSize" width="412" height="292"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ZodiacCVC" id="PmU-fu-kqi" customClass="ZodiacCVC" customModule="ZodiacSignsDemo" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="412" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bsF-Ne-b4s">
+                                            <rect key="frame" x="0.0" y="0.0" width="412" height="176"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Tk-H9-2MG">
+                                                    <rect key="frame" x="166" y="15" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="gwZ-Dj-hou"/>
+                                                        <constraint firstAttribute="height" constant="80" id="z4d-I4-EUx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H07-SH-Fed">
+                                                    <rect key="frame" x="0.0" y="100" width="412" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChY-Kc-Ch2">
+                                                    <rect key="frame" x="0.0" y="131" width="412" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ChY-Kc-Ch2" firstAttribute="top" secondItem="H07-SH-Fed" secondAttribute="bottom" constant="10" id="GYK-LF-2dG"/>
+                                                <constraint firstItem="H07-SH-Fed" firstAttribute="leading" secondItem="bsF-Ne-b4s" secondAttribute="leading" id="Hqx-QR-GNM"/>
+                                                <constraint firstItem="ChY-Kc-Ch2" firstAttribute="leading" secondItem="bsF-Ne-b4s" secondAttribute="leading" id="Mah-Vs-rGH"/>
+                                                <constraint firstAttribute="trailing" secondItem="ChY-Kc-Ch2" secondAttribute="trailing" id="Svi-xM-ejA"/>
+                                                <constraint firstAttribute="trailing" secondItem="H07-SH-Fed" secondAttribute="trailing" id="Vw0-yd-4tT"/>
+                                                <constraint firstItem="1Tk-H9-2MG" firstAttribute="top" secondItem="bsF-Ne-b4s" secondAttribute="top" constant="15" id="p7h-v4-i6h"/>
+                                                <constraint firstItem="1Tk-H9-2MG" firstAttribute="centerX" secondItem="bsF-Ne-b4s" secondAttribute="centerX" id="zSM-en-Bvk"/>
+                                                <constraint firstItem="H07-SH-Fed" firstAttribute="top" secondItem="1Tk-H9-2MG" secondAttribute="bottom" constant="5" id="zpL-fi-zAi"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="Background Color"/>
+                                        <size key="customSize" width="412" height="176"/>
+                                        <connections>
+                                            <outlet property="zodiacDateLbl" destination="ChY-Kc-Ch2" id="BDz-9Z-cNV"/>
+                                            <outlet property="zodiacImg" destination="1Tk-H9-2MG" id="f2B-f7-2EM"/>
+                                            <outlet property="zodiacNameLbl" destination="H07-SH-Fed" id="sRi-Sq-fum"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="nAm-Na-P80"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HyU-ge-5Bs"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Background Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DOn-OH-JGR" secondAttribute="trailing" id="36k-u3-KOp"/>
+                            <constraint firstItem="yPI-TL-dNC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="W5i-Hb-k4J"/>
+                            <constraint firstItem="DOn-OH-JGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aEM-6h-EcX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPI-TL-dNC" secondAttribute="trailing" id="gdZ-sb-ORy"/>
+                            <constraint firstItem="yPI-TL-dNC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hy4-hk-dKx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DOn-OH-JGR" secondAttribute="bottom" id="u17-9a-wks"/>
+                            <constraint firstItem="DOn-OH-JGR" firstAttribute="top" secondItem="yPI-TL-dNC" secondAttribute="bottom" id="u4k-b0-DEM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ZodiacCollV" destination="DOn-OH-JGR" id="mNi-Fq-BLC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background Color">
+            <color red="1" green="0.62745098039215685" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
