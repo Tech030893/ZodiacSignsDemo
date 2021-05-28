@@ -4,6 +4,9 @@ class ViewController: UIViewController
 {
     @IBOutlet weak var ZodiacCollV: UICollectionView!
     
+    //Zodiac Signs
+    //राशि  चिन्ह
+    
     //Zodiac Image Array
     let ZodImgArr = ["Aquarius","Aries","Cancer","Capricorn","Gemini","Leo","Libra","Pisces","Sagittarius","Scorpio","Taurus","Virgo"]
     //Zodiac Hindi Name Array
@@ -32,8 +35,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ZodiacCVC", for: indexPath) as! ZodiacCVC
         cell.zodiacImg.image = UIImage(named: ZodImgArr[indexPath.row])
-        cell.zodiacNameLbl.text = ZodHindiNameArr[indexPath.row]
-        cell.zodiacDateLbl.text = ZodHindiDateArr[indexPath.row]
+        //cell.zodiacNameLbl.text = ZodHindiNameArr[indexPath.row]
+        cell.zodiacNameLbl.text = ZodEnglishNameArr[indexPath.row]
+        //cell.zodiacDateLbl.text = ZodHindiDateArr[indexPath.row]
+        cell.zodiacDateLbl.text = ZodEnglishDateArr[indexPath.row]
         return cell
     }
     
