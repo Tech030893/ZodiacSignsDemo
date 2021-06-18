@@ -3,7 +3,7 @@
 Zodiac Signs Demo App design using swift language with the help of collection view cell. App created programmatically as well as using storyboard.
 
 ## Programming language used
-- Swift
+- Swift 5
 
 ## Deployment Info
 - iOS 14.3
